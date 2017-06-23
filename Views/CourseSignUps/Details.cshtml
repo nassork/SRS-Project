@@ -1,0 +1,58 @@
+﻿@model SRSWepApp.Models.CourseSignUp
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CourseSignUp</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseOffering.CRN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseOffering.CRN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.UserFullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.UserFullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GradePoints)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GradePoints)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LetterGrade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LetterGrade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SignUpDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SignUpDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CourseSignUpId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

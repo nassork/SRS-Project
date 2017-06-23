@@ -1,0 +1,8 @@
+﻿@model SRSWepApp.Models.CourseOffering
+
+@using (Html.BeginForm("SearchCourseOfferings", "CourseOfferings", FormMethod.Post))
+{
+    @Html.Label("Preffered Start Time")
+    @Html.EditorFor(model => model.StartTime)
+}
+

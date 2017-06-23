@@ -1,0 +1,50 @@
+﻿@model SRSWepApp.Models.CourseOffering
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CourseOffering</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Course.CourseNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course.CourseNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CRN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CRN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WeekDays)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WeekDays)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfOpennings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfOpennings)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CourseOfferingId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

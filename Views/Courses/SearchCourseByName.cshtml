@@ -1,0 +1,17 @@
+﻿<h2>Search Course By Subject</h2>
+
+<hr />
+
+@using (Html.BeginForm("SearchCourseByName", "Courses", FormMethod.Post))
+{
+    @Html.Label("Enter Subject Title")
+    @Html.TextBox("Title")
+
+    <br />
+
+    <input type="submit" class="btn btn-deualt" value="Search Course"/>
+
+}
+
+
+
